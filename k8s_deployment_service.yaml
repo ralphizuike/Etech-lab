@@ -16,7 +16,7 @@ spec:
         app: devsecops
     spec:
       containers:
-      - image: replace
+      - image: enkengaf32/uber-app:17d92e8b903d0277269b6f3c0d8a7af06bf366678b 
         name: devsecops-container
 ---
 apiVersion: v1
