@@ -50,5 +50,12 @@ pipeline {
         }
       }
     }
+    stage('tf provision'){
+      steps{
+       sh "terraform init"
+        sh "terraform plan"
+        sh "terraform apply"
+      }
+    }
 }
 }
