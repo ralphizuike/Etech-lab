@@ -31,7 +31,7 @@ pipeline {
         }
     stage('Sonarqube-SAST'){
       steps{
-    sh "mvn sonar:sonar -Dsonar.projectKey=devsecops-demo -Dsonar.host.url=http://etechdemo.eastus.cloudapp.azure.com:9000 -Dsonar.login= 27bbb5c1909c29083c484fd6e59ee4e69a6d78d1"  
+    sh "mvn sonar:sonar -Dsonar.projectKey=devsecops-demo -Dsonar.host.url=http://etechdemo.eastus.cloudapp.azure.com:9000 -Dsonar.login=3ff4a361fad668d6f587b05e696bc6ca83df4208"  
       }
     }
     stage('Docker Build and Push') {
