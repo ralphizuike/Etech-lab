@@ -27,16 +27,16 @@ public class NumericController {
 
 		@GetMapping("/")
 		public String welcome() {
-			return "Welcome to Etech Consulting Legacy Devops platform, we are New Generation Engineers!!!";
+			return "Welcome to Etech";
 		}
 
 		@GetMapping("/compare/{value}")
 		public String compareToFifty(@PathVariable int value) {
 			String message = "Could not determine comparison";
-			if (value > 100) {
-				message = "Greater than 100";
+			if (value > 50) {
+				message = "Greater than 50";
 			} else {
-				message = "Smaller than or equal to 100";
+				message = "Smaller than or equal to 50";
 			}
 			return message;
 		}
