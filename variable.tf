@@ -1,8 +1,8 @@
 variable "aws_region" {
-  default = "us-east-1"
+  default = "us-east-2"
 }
 
 variable "cluster-name" {
-  default = "awesome-eks"
+  default = "etech-eks"
   type    = string
 }
