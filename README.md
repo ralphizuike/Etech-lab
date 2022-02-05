@@ -1,17 +1,7 @@
-# kubernetes-devops-security
+# EKS Getting Started Guide Configuration
 
-## Fork and Clone this Repo
+This is the full configuration from https://www.terraform.io/docs/providers/aws/guides/eks-getting-started.html
 
-## Clone to Desktop and VM
+See that guide for additional information.
 
-## NodeJS Microservice - Docker Image -
-`docker run -p 8787:5000 siddharth67/node-service:v1`
-
-`curl localhost:8787/plusone/99`
- 
-## NodeJS Microservice - Kubernetes Deployment -
-`kubectl create deploy node-app --image siddharth67/node-service:v1`
-
-`kubectl expose deploy node-app --name node-service --port 5000 --type ClusterIP`
-
-`curl node-service-ip:5000/plusone/99`
+NOTE: This full configuration utilizes the [Terraform http provider](https://www.terraform.io/docs/providers/http/index.html) to call out to icanhazip.com to determine your local workstation external IP for easily configuring EC2 Security Group access to the Kubernetes servers. Feel free to replace this as necessary.
