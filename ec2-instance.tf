@@ -5,3 +5,4 @@ resource "aws_instance" "testserver" {
            Name = "testserver"
            Description = "use for demo"
          }
+}
