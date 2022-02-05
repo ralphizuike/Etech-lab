@@ -71,7 +71,7 @@
       </execution>
    </executions>
 </plugin>
-			<!--                   PITest Mutation Plugin              -->
+			<!--                   PITest Mutation Plugin demo            -->
 <plugin>
    <groupId>org.pitest</groupId>
    <artifactId>pitest-maven</artifactId>
