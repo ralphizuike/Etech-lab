@@ -3,6 +3,6 @@ variable "aws_region" {
 }
 
 variable "cluster-name" {
-  default = "awesome-eks"
+  default = "etech-eks"
   type    = string
 }
