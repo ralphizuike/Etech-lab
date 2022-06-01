@@ -7,6 +7,10 @@ pipeline{
 			}
 		}
 	}
-	//stage
+	       stage('2-test'){
+		      steps{
+		sh ' cat /etc/passwd '
+		}
+	}
 	
 }
